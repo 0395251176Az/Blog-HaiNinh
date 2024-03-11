@@ -143,16 +143,16 @@ const About = () => {
             <Tabs defaultValue='personal'>
               <TabsList className='w-full grid xl:grid-cols-3 xl:max-w-[520px] xl:border dark:border-none'>
                 <TabsTrigger className='w-[162px] xl:w-auto' value='personal'>
-                  Personal Info
+                  Thông tin cá nhân
                 </TabsTrigger>
                 <TabsTrigger
                   className='w-[162px] xl:w-auto'
                   value='qualifications'
                 >
-                  Qualifications
+                  Chuyên môn
                 </TabsTrigger>
                 <TabsTrigger className='w-[162px] xl:w-auto' value='skills'>
-                  Skills
+                  Kỹ Năng
                 </TabsTrigger>
               </TabsList>
               {/* tabs content */}
@@ -161,12 +161,10 @@ const About = () => {
                 <TabsContent value='personal'>
                   <div className='text-center xl:text-left'>
                     <h3 className='h3 mb-4'>
-                      Unmatched Service Quality for Over 10 Years
+                      Chất lượng kinh nghiệm có hơn 10 năm trong ngành marketing.
                     </h3>
                     <p className='subtitle max-w-xl mx-auto xl:mx-0'>
-                      I specialize in crafting intuitive websites with
-                      cutting-edge technology, delivering dynamic and engaging
-                      user experiences.
+                      Tôi chuyên đào tạo về ngành marketing với công nghệ tiên tiến, mang lại trải nghiệm năng động và hấp dẫn cho học viên và khách hàng.
                     </p>
                     {/* icons */}
                     <div className='grid xl:grid-cols-2 gap-4 mb-12'>
@@ -186,7 +184,7 @@ const About = () => {
                     <div className='flex flex-col gap-y-2'>
                       <div className='text-primary'>Language Skill</div>
                       <div className='border-b border-border'></div>
-                      <div>English, French, Spanish, Italian</div>
+                      <div>English, French, China</div>
                     </div>
                   </div>
                 </TabsContent>
@@ -194,7 +192,7 @@ const About = () => {
                 <TabsContent value='qualifications'>
                   <div>
                     <h3 className='h3 mb-8 text-center xl:text-left'>
-                      My Awesome Journey
+                      Hành trình tuyệt vời của tôi
                     </h3>
                     {/* experience & education wrapper */}
                     <div className='grid md:grid-cols-2 gap-y-8'>
@@ -274,7 +272,7 @@ const About = () => {
                 {/* skills */}
                 <TabsContent value='skills'>
                   <div className='text-center xl:text-left'>
-                    <h3 className='h3 mb-8'>What I Use Everyday</h3>
+                    <h3 className='h3 mb-8'>Những gì tôi giảng dạy hàng ngày</h3>
                     {/* skills */}
                     <div className='mb-16'>
                       <h4 className='text-xl font-semibold mb-2'>Skills</h4>
