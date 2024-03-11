@@ -26,8 +26,7 @@ const Hero = () => {
             </div>
             <h1 className='h1 mb-4'>Hello, my name is Nguyen Hai Ninh</h1>
             <p className='subtitle max-w-[490px] mx-auto xl:mx-0'>
-              Brief description with insights into myself, my vocational
-              journey, and what I engage in professionally.
+              Mô tả ngắn gọn với những hiểu biết sâu sắc về bản thân, hành trình nghề nghiệp của tôi và những gì tôi tham gia một cách chuyên nghiệp.
             </p>
             {/* buttons */}
             <div className='flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12'>
@@ -36,10 +35,6 @@ const Hero = () => {
                   Contact me <Send size={18} />
                 </Button>
               </Link>
-              <Button variant='secondary' className='gap-x-2'>
-                Download CV
-                <Download size={18} />
-              </Button>
             </div>
             {/* socials */}
             <Socials
