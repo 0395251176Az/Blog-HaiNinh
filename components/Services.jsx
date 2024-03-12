@@ -10,21 +10,21 @@ import {
 const servicesData = [
   {
     icon: <GanttChartSquare size={72} strokeWidth={0.8} />,
-    title: 'Web Design',
+    title: 'International bussiness',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quasi libero quidem sit deserunt fuga.',
+      'Kinh doanh quốc tế là lĩnh vực tập trung vào giao thương và hợp tác trên toàn cầu. Đối mặt với thách thức đa văn hóa và biến động thị trường, ngành này đóng vai trò quan trọng đến sự phát triển kinh tế toàn cầu.',
   },
   {
     icon: <Blocks size={72} strokeWidth={0.8} />,
-    title: 'Web Development',
+    title: 'Marketing',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quasi libero quidem sit deserunt fuga.',
+      'Marketing là nghệ thuật xây dựng và quảng bá thương hiệu, tạo mối liên kết sâu sắc giữa doanh nghiệp và khách hàng. Với chiến lược sáng tạo, ngành này định hình xu hướng tiêu dùng và thúc đẩy sự phát triển kinh doanh.',
   },
   {
     icon: <Gem size={72} strokeWidth={0.8} />,
-    title: 'App Development',
+    title: 'Ecommerce',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quasi libero quidem sit deserunt fuga.',
+      'E-commerce là lĩnh vực giao dịch trực tuyến, trải nghiệm mua sắm thuận tiện và đa dạng. Được đánh giá cao với sự tiện lợi và tốc độ, ngành này ngày định hình cách mọi người mua sắm và kinh doanh trên toàn thế giới.',
   },
 ];
 

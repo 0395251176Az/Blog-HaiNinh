@@ -7,7 +7,7 @@ const Cta = () => {
       <div className='container mx-auto'>
         <div className='flex flex-col items-center'>
           <h2 className='h2 max-w-xl text-center mb-8'>
-            Sẵn sàng để biến ý tưởng của bạn thành hiện thực? Tôi ở đây để giúp đỡ.
+            Sẵn sàng biến ý tưởng thành hiện thực. Tôi ở đây để giúp đỡ.
           </h2>
           <Link href='/contact'>
             <Button>Liên hệ với tôi</Button>

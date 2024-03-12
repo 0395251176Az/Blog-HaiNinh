@@ -93,16 +93,16 @@ const skillData = [
     title: 'skills',
     data: [
       {
-        name: 'Marketing strategies and customer psychology',
+        name: '- Marketing strategies and customer psychology',
       },
       {
-        name: 'Communications, Digital marketing and branding',
+        name: '- Communications, Digital marketing and branding',
       },
       {
-        name: 'International business and business strategy',
+        name: '- International business and business strategy',
       },
       {
-        name: 'Retail channel integration and customer experience',
+        name: '- Retail channel integration and customer experience',
       },
     ],
   },
