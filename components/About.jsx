@@ -15,27 +15,27 @@ import {
 const infoData = [
   {
     icon: <User2 size={20} />,
-    text: 'Nguyen Hai Ninh',
+    text: 'Nguyễn Hải Ninh',
   },
   {
     icon: <PhoneCall size={20} />,
-    text: '+012 345 6789',
+    text: '0915139839',
   },
   {
     icon: <MailIcon size={20} />,
-    text: 'youremail@email.com',
+    text: 'nguyen.haininh@ftu.edu.vn',
   },
   {
     icon: <Calendar size={20} />,
-    text: 'Born on 10 Mar, 1998',
+    text: 'Born on 01/01/1980',
   },
   {
     icon: <GraduationCap size={20} />,
-    text: 'Master on Computer Science',
+    text: 'Associate Professor Ph.D',
   },
   {
     icon: <HomeIcon size={20} />,
-    text: '321 Blue Avenue, NY, USA',
+    text: 'Hà Nội',
   },
 ];
 
@@ -44,19 +44,20 @@ const qualificationData = [
     title: 'education',
     data: [
       {
-        university: 'Example University',
-        qualification: 'Bachelor of Science',
-        years: '2015 - 2018',
+        university: 'Đại học kinh tế quốc dân',
+        years: '2010 - 2012',
       },
       {
-        university: 'Another University',
-        qualification: 'Master of Arts',
-        years: '2019 - 2021',
+        university: 'Flinders University',
+        years: '2004 - 2006',
       },
       {
-        university: 'Yet Another University',
-        qualification: 'Ph.D in Computer Science',
-        years: '2021 - 2025',
+        university: 'Amsterdam High School',
+        years: '1995 - 1997',
+      },
+      {
+        university: 'THPT chuyên Lê Hồng Phong - Nam Định',
+        years: '1994 - 1995',
       },
     ],
   },
@@ -64,19 +65,24 @@ const qualificationData = [
     title: 'experience',
     data: [
       {
-        company: 'ABC Inc.',
-        role: 'Software Engineer',
-        years: '2018 - 2020',
+        company: 'Công Ty Điện Toán & Truyền Số Liệu VDC.',
+        role: 'Head of Mobile Commerce Division',
+        years: '2002 - 2010',
       },
       {
-        company: 'XYZ Corporation',
-        role: 'Senior Developer',
-        years: '2020 - 2022',
+        company: 'Trường Đại học Ngoại thương',
+        role: 'Giảng viên bộ môn Kinh doanh quốc tế',
+        years: '2010 - 2016',
       },
       {
-        company: 'Tech Innovators',
-        role: 'Lead Developer',
-        years: '2022 - Present',
+        company: 'Trường Đại học Ngoại thương',
+        role: 'Giám đốc trung tâm phát triển quốc tế',
+        years: '2016 - 2021',
+      },
+      {
+        company: 'Trường Đại học Ngoại thương',
+        role: 'Giảng viên cao cấp bộ môn Marketing và truyền thông',
+        years: '2021 - Present',
       },
     ],
   },
@@ -87,16 +93,16 @@ const skillData = [
     title: 'skills',
     data: [
       {
-        name: 'HTML, CSS',
+        name: 'Marketing strategies and customer psychology',
       },
       {
-        name: 'Front-end Development',
+        name: 'Communications, Digital marketing and branding',
       },
       {
-        name: 'Javascript, PHP',
+        name: 'International business and business strategy',
       },
       {
-        name: 'Back-end Development',
+        name: 'Retail channel integration and customer experience',
       },
     ],
   },
