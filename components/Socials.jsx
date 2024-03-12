@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import {
   RiYoutubeFill,
@@ -6,29 +6,22 @@ import {
   RiGithubFill,
   RiFacebookFill,
   RiInstagramFill,
-} from 'react-icons/ri';
+} from "react-icons/ri";
 
-import Link from 'next/link';
+import Link from "next/link";
 
 const icons = [
   {
-    path: '/',
-    name: <RiYoutubeFill />,
-  },
-  {
-    path: '/',
+    path: "/",
     name: <RiLinkedinFill />,
   },
+
   {
-    path: '/',
-    name: <RiGithubFill />,
-  },
-  {
-    path: '/',
+    path: "/",
     name: <RiFacebookFill />,
   },
   {
-    path: '/',
+    path: "/",
     name: <RiInstagramFill />,
   },
 ];

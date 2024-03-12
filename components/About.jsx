@@ -1,6 +1,6 @@
-import DevImg from './DevImg';
-import Image from 'next/image';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import DevImg from "./DevImg";
+import Image from "next/image";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 import {
   User2,
@@ -10,79 +10,79 @@ import {
   GraduationCap,
   Calendar,
   Briefcase,
-} from 'lucide-react';
+} from "lucide-react";
 
 const infoData = [
   {
     icon: <User2 size={20} />,
-    text: 'Nguyễn Hải Ninh',
+    text: "Nguyễn Hải Ninh",
   },
   {
     icon: <PhoneCall size={20} />,
-    text: '0915139839',
+    text: "0915139839",
   },
   {
     icon: <MailIcon size={20} />,
-    text: 'nguyen.haininh@ftu.edu.vn',
+    text: "nguyen.haininh@ftu.edu.vn",
   },
   {
     icon: <Calendar size={20} />,
-    text: 'Born on 01/01/1980',
+    text: "Born on 01/01/1980",
   },
   {
     icon: <GraduationCap size={20} />,
-    text: 'Associate Professor Ph.D',
+    text: "Associate Professor Ph.D",
   },
   {
     icon: <HomeIcon size={20} />,
-    text: 'Hà Nội',
+    text: "Hà Nội",
   },
 ];
 
 const qualificationData = [
   {
-    title: 'education',
+    title: "education",
     data: [
       {
-        university: 'Đại học kinh tế quốc dân',
-        years: '2010 - 2012',
+        university: "Đại học kinh tế quốc dân",
+        years: "2010 - 2012",
       },
       {
-        university: 'Flinders University',
-        years: '2004 - 2006',
+        university: "Flinders University",
+        years: "2004 - 2006",
       },
       {
-        university: 'Amsterdam High School',
-        years: '1995 - 1997',
+        university: "Amsterdam High School",
+        years: "1995 - 1997",
       },
       {
-        university: 'THPT chuyên Lê Hồng Phong - Nam Định',
-        years: '1994 - 1995',
+        university: "THPT chuyên Lê Hồng Phong - Nam Định",
+        years: "1994 - 1995",
       },
     ],
   },
   {
-    title: 'experience',
+    title: "experience",
     data: [
       {
-        company: 'Công Ty Điện Toán & Truyền Số Liệu VDC.',
-        role: 'Head of Mobile Commerce Division',
-        years: '2002 - 2010',
+        company: "Công Ty Điện Toán & Truyền Số Liệu VDC.",
+        role: "Head of Mobile Commerce Division",
+        years: "2002 - 2010",
       },
       {
-        company: 'Trường Đại học Ngoại thương',
-        role: 'Giảng viên bộ môn Kinh doanh quốc tế',
-        years: '2010 - 2016',
+        company: "Trường Đại học Ngoại thương",
+        role: "Giảng viên bộ môn Kinh doanh quốc tế",
+        years: "2010 - 2016",
       },
       {
-        company: 'Trường Đại học Ngoại thương',
-        role: 'Giám đốc trung tâm phát triển quốc tế',
-        years: '2016 - 2021',
+        company: "Trường Đại học Ngoại thương",
+        role: "Giám đốc trung tâm phát triển quốc tế",
+        years: "2016 - 2021",
       },
       {
-        company: 'Trường Đại học Ngoại thương',
-        role: 'Giảng viên cao cấp bộ môn Marketing và truyền thông',
-        years: '2021 - Present',
+        company: "Trường Đại học Ngoại thương",
+        role: "Giảng viên cao cấp bộ môn Marketing và truyền thông",
+        years: "2021 - Present",
       },
     ],
   },
@@ -90,36 +90,36 @@ const qualificationData = [
 
 const skillData = [
   {
-    title: 'skills',
+    title: "skills",
     data: [
       {
-        name: '- Marketing strategies and customer psychology',
+        name: "- Marketing strategies and customer psychology",
       },
       {
-        name: '- Communications, Digital marketing and branding',
+        name: "- Communications, Digital marketing and branding",
       },
       {
-        name: '- International business and business strategy',
+        name: "- International business and business strategy",
       },
       {
-        name: '- Retail channel integration and customer experience',
+        name: "- Retail channel integration and customer experience",
       },
     ],
   },
   {
-    title: 'tools',
+    title: "tools",
     data: [
       {
-        imgPath: '/about/vscode.svg',
+        imgPath: "/about/vscode.svg",
       },
       {
-        imgPath: '/about/figma.svg',
+        imgPath: "/about/figma.svg",
       },
       {
-        imgPath: '/about/notion.svg',
+        imgPath: "/about/notion.svg",
       },
       {
-        imgPath: '/about/wordpress.svg',
+        imgPath: "/about/wordpress.svg",
       },
     ],
   },
@@ -131,103 +131,106 @@ const About = () => {
   };
 
   return (
-    <section className='xl:h-[860px] pb-12 xl:py-24'>
-      <div className='container mx-auto'>
-        <h2 className='section-title mb-8 xl:mb-16 text-center mx-auto'>
+    <section className="xl:h-[860px] pb-12 xl:py-24 mb-4">
+      <div className="container mx-auto">
+        <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">
           About me
         </h2>
-        <div className='flex flex-col xl:flex-row'>
+        <div className="flex flex-col xl:flex-row">
           {/* image */}
-          <div className='hidden xl:flex flex-1 relative'>
+          <div className="hidden xl:flex flex-1 relative">
             <DevImg
-              containerStyles='bg-about_shape_light dark:bg-about_shape_dark w-[505px] h-[505px] bg-no-repeat relative'
-              imgSrc='/about/developer.png'
+              containerStyles="bg-about_shape_light dark:bg-about_shape_dark w-[505px] h-[505px] bg-no-repeat relative"
+              imgSrc="/about/developer.png"
             />
           </div>
           {/* tabs */}
-          <div className='flex-1'>
-            <Tabs defaultValue='personal'>
-              <TabsList className='w-full grid xl:grid-cols-3 xl:max-w-[520px] xl:border dark:border-none'>
-                <TabsTrigger className='w-[162px] xl:w-auto' value='personal'>
+          <div className="flex-1">
+            <Tabs defaultValue="personal">
+              <TabsList className="w-full grid xl:grid-cols-3 xl:max-w-[520px] xl:border dark:border-none">
+                <TabsTrigger className="w-[162px] xl:w-auto" value="personal">
                   Thông tin cá nhân
                 </TabsTrigger>
                 <TabsTrigger
-                  className='w-[162px] xl:w-auto'
-                  value='qualifications'
+                  className="w-[162px] xl:w-auto"
+                  value="qualifications"
                 >
                   Chuyên môn
                 </TabsTrigger>
-                <TabsTrigger className='w-[162px] xl:w-auto' value='skills'>
+                <TabsTrigger className="w-[162px] xl:w-auto" value="skills">
                   Kỹ Năng
                 </TabsTrigger>
               </TabsList>
               {/* tabs content */}
-              <div className='text-lg mt-12 xl:mt-8'>
+              <div className="text-lg mt-12 xl:mt-8">
                 {/* personal */}
-                <TabsContent value='personal'>
-                  <div className='text-center xl:text-left'>
-                    <h3 className='h3 mb-4'>
-                      Chất lượng kinh nghiệm có hơn 10 năm trong ngành marketing.
+                <TabsContent value="personal">
+                  <div className="text-center xl:text-left">
+                    <h3 className="h3 mb-4">
+                      Chất lượng kinh nghiệm có hơn 10 năm trong ngành
+                      marketing.
                     </h3>
-                    <p className='subtitle max-w-xl mx-auto xl:mx-0'>
-                      Tôi chuyên đào tạo về ngành marketing với công nghệ tiên tiến, mang lại trải nghiệm năng động và hấp dẫn cho học viên và khách hàng.
+                    <p className="subtitle max-w-xl mx-auto xl:mx-0">
+                      Tôi chuyên đào tạo về ngành marketing với công nghệ tiên
+                      tiến, mang lại trải nghiệm năng động và hấp dẫn cho học
+                      viên và khách hàng.
                     </p>
                     {/* icons */}
-                    <div className='grid xl:grid-cols-2 gap-4 mb-12'>
+                    <div className="grid xl:grid-cols-2 gap-4 mb-12">
                       {infoData.map((item, index) => {
                         return (
                           <div
-                            className='flex items-center gap-x-4 mx-auto xl:mx-0'
+                            className="flex items-center gap-x-4 mx-auto xl:mx-0"
                             key={index}
                           >
-                            <div className='text-primary'>{item.icon}</div>
+                            <div className="text-primary">{item.icon}</div>
                             <div>{item.text}</div>
                           </div>
                         );
                       })}
                     </div>
                     {/* languages */}
-                    <div className='flex flex-col gap-y-2'>
-                      <div className='text-primary'>Language Skill</div>
-                      <div className='border-b border-border'></div>
+                    <div className="flex flex-col gap-y-2">
+                      <div className="text-primary">Language Skill</div>
+                      <div className="border-b border-border"></div>
                       <div>English, French, China</div>
                     </div>
                   </div>
                 </TabsContent>
                 {/* qualifications */}
-                <TabsContent value='qualifications'>
+                <TabsContent value="qualifications">
                   <div>
-                    <h3 className='h3 mb-8 text-center xl:text-left'>
+                    <h3 className="h3 mb-8 text-center xl:text-left">
                       Hành trình tuyệt vời của tôi
                     </h3>
                     {/* experience & education wrapper */}
-                    <div className='grid md:grid-cols-2 gap-y-8'>
+                    <div className="grid md:grid-cols-2 gap-y-8">
                       {/* experience */}
-                      <div className='flex flex-col gap-y-6'>
-                        <div className='flex gap-x-4 items-center text-[22px] text-primary'>
+                      <div className="flex flex-col gap-y-6">
+                        <div className="flex gap-x-4 items-center text-[22px] text-primary">
                           <Briefcase />
-                          <h4 className='capitalize font-medium'>
-                            {getData(qualificationData, 'experience').title}
+                          <h4 className="capitalize font-medium">
+                            {getData(qualificationData, "experience").title}
                           </h4>
                         </div>
                         {/* list */}
-                        <div className='flex flex-col gap-y-8'>
-                          {getData(qualificationData, 'experience').data.map(
+                        <div className="flex flex-col gap-y-8">
+                          {getData(qualificationData, "experience").data.map(
                             (item, index) => {
                               const { company, role, years } = item;
                               return (
-                                <div className='flex gap-x-8 group' key={index}>
-                                  <div className='h-[84px] w-[1px] bg-border relative ml-2'>
-                                    <div className='w-[11px] h-[11px] rounded-full bg-primary absolute -left-[5px] group-hover:translate-y-[84px] transition-all duration-500'></div>
+                                <div className="flex gap-x-8 group" key={index}>
+                                  <div className="h-[84px] w-[1px] bg-border relative ml-2">
+                                    <div className="w-[11px] h-[11px] rounded-full bg-primary absolute -left-[5px] group-hover:translate-y-[84px] transition-all duration-500"></div>
                                   </div>
                                   <div>
-                                    <div className='font-semibold text-xl leading-none mb-2'>
+                                    <div className="font-semibold text-xl leading-none mb-2">
                                       {company}
                                     </div>
-                                    <div className='text-lg leading-none text-muted-foreground mb-4'>
+                                    <div className="text-lg leading-none text-muted-foreground mb-4">
                                       {role}
                                     </div>
-                                    <div className='text-base font-medium'>
+                                    <div className="text-base font-medium">
                                       {years}
                                     </div>
                                   </div>
@@ -238,31 +241,31 @@ const About = () => {
                         </div>
                       </div>
                       {/* education */}
-                      <div className='flex flex-col gap-y-6'>
-                        <div className='flex gap-x-4 items-center text-[22px] text-primary'>
+                      <div className="flex flex-col gap-y-6">
+                        <div className="flex gap-x-4 items-center text-[22px] text-primary">
                           <GraduationCap size={28} />
-                          <h4 className='capitalize font-medium'>
-                            {getData(qualificationData, 'education').title}
+                          <h4 className="capitalize font-medium">
+                            {getData(qualificationData, "education").title}
                           </h4>
                         </div>
                         {/* list */}
-                        <div className='flex flex-col gap-y-8'>
-                          {getData(qualificationData, 'education').data.map(
+                        <div className="flex flex-col gap-y-8">
+                          {getData(qualificationData, "education").data.map(
                             (item, index) => {
                               const { university, qualification, years } = item;
                               return (
-                                <div className='flex gap-x-8 group' key={index}>
-                                  <div className='h-[84px] w-[1px] bg-border relative ml-2'>
-                                    <div className='w-[11px] h-[11px] rounded-full bg-primary absolute -left-[5px] group-hover:translate-y-[84px] transition-all duration-500'></div>
+                                <div className="flex gap-x-8 group" key={index}>
+                                  <div className="h-[84px] w-[1px] bg-border relative ml-2">
+                                    <div className="w-[11px] h-[11px] rounded-full bg-primary absolute -left-[5px] group-hover:translate-y-[84px] transition-all duration-500"></div>
                                   </div>
                                   <div>
-                                    <div className='font-semibold text-xl leading-none mb-2'>
+                                    <div className="font-semibold text-xl leading-none mb-2">
                                       {university}
                                     </div>
-                                    <div className='text-lg leading-none text-muted-foreground mb-4'>
+                                    <div className="text-lg leading-none text-muted-foreground mb-4">
                                       {qualification}
                                     </div>
-                                    <div className='text-base font-medium'>
+                                    <div className="text-base font-medium">
                                       {years}
                                     </div>
                                   </div>
@@ -276,24 +279,26 @@ const About = () => {
                   </div>
                 </TabsContent>
                 {/* skills */}
-                <TabsContent value='skills'>
-                  <div className='text-center xl:text-left'>
-                    <h3 className='h3 mb-8'>Những gì tôi giảng dạy hàng ngày</h3>
+                <TabsContent value="skills">
+                  <div className="text-center xl:text-left">
+                    <h3 className="h3 mb-8">
+                      Những gì tôi giảng dạy hàng ngày
+                    </h3>
                     {/* skills */}
-                    <div className='mb-16'>
-                      <h4 className='text-xl font-semibold mb-2'>Skills</h4>
-                      <div className='border-b border-border mb-4'></div>
+                    <div className="mb-16">
+                      <h4 className="text-xl font-semibold mb-2">Skills</h4>
+                      <div className="border-b border-border mb-4"></div>
                       {/* skill list */}
                       <div>
-                        {getData(skillData, 'skills').data.map(
+                        {getData(skillData, "skills").data.map(
                           (item, index) => {
                             const { name } = item;
                             return (
                               <div
-                                className='w-2/4 text-center xl:text-left mx-auto xl:mx-0'
+                                className="w-2/4 text-center xl:text-left mx-auto xl:mx-0"
                                 key={index}
                               >
-                                <div className='font-medium'>{name}</div>
+                                <div className="font-medium">{name}</div>
                               </div>
                             );
                           }
@@ -302,13 +307,13 @@ const About = () => {
                     </div>
                     {/* tools */}
                     <div>
-                      <h4 className='text-xl font-semibold mb-2 xl:text-left'>
+                      <h4 className="text-xl font-semibold mb-2 xl:text-left">
                         Tools
                       </h4>
-                      <div className='border-b border-border mb-4'></div>
+                      <div className="border-b border-border mb-4"></div>
                       {/* tool list */}
-                      <div className='flex gap-x-8 justify-center xl:justify-start'>
-                        {getData(skillData, 'tools').data.map((item, index) => {
+                      <div className="flex gap-x-8 justify-center xl:justify-start">
+                        {getData(skillData, "tools").data.map((item, index) => {
                           const { imgPath } = item;
                           return (
                             <div key={index}>
@@ -316,7 +321,7 @@ const About = () => {
                                 src={imgPath}
                                 width={48}
                                 height={48}
-                                alt=''
+                                alt=""
                                 priority
                               />
                             </div>
