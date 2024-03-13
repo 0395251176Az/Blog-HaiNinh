@@ -7,8 +7,8 @@ import Link from "next/link";
 const projectData = [
   {
     image: "/work/3.png",
-    category: "react js",
-    name: "Nexa Website",
+    category: "Economy",
+    name: "Market story",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quis.",
     link: "/",
@@ -16,8 +16,8 @@ const projectData = [
   },
   {
     image: "/work/4.png",
-    category: "react js",
-    name: "Solstice Website",
+    category: "Economy",
+    name: "Market story",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quis.",
     link: "/",
@@ -25,8 +25,8 @@ const projectData = [
   },
   {
     image: "/work/2.png",
-    category: "next js",
-    name: "Lumina Website",
+    category: "Ecommerce",
+    name: "Market story",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quis.",
     link: "/",
@@ -34,8 +34,8 @@ const projectData = [
   },
   {
     image: "/work/1.png",
-    category: "next js",
-    name: "Evolve Website",
+    category: "Ecommerce",
+    name: "Market story",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quis.",
     link: "/",
@@ -43,8 +43,8 @@ const projectData = [
   },
   {
     image: "/work/3.png",
-    category: "next js",
-    name: "Ignite Website",
+    category: "Ecommerce",
+    name: "Market story",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quis.",
     link: "/",
@@ -52,8 +52,8 @@ const projectData = [
   },
   {
     image: "/work/4.png",
-    category: "next js",
-    name: "Envision Website",
+    category: "Ecommerce",
+    name: "Market story",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quis.",
     link: "/",
@@ -61,8 +61,8 @@ const projectData = [
   },
   {
     image: "/work/1.png",
-    category: "fullstack",
-    name: "Serenity Website",
+    category: "Marketing",
+    name: "Market story",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quis.",
     link: "/",
@@ -70,8 +70,8 @@ const projectData = [
   },
   {
     image: "/work/3.png",
-    category: "fullstack",
-    name: "Nova Website",
+    category: "Marketing",
+    name: "Market story",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quis.",
     link: "/",
@@ -79,8 +79,8 @@ const projectData = [
   },
   {
     image: "/work/2.png",
-    category: "fullstack",
-    name: "Zenith Website",
+    category: "Marketing",
+    name: "Market story",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quis.",
     link: "/",
@@ -109,7 +109,7 @@ const Projects = () => {
     <section className="min-h-screen pt-12">
       <div className="container mx-auto">
         <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">
-          My Projects
+          Tài liệu
         </h2>
         {/* tabs */}
         <Tabs defaultValue={category} className="mb-24 xl:mb-48">
