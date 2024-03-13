@@ -1,7 +1,7 @@
 import React from "react";
 
 const layoutDashboard = ({ children }) => {
-  return <div className=" bg-border">{children}</div>;
+  return <div className="">{children}</div>;
 };
 
 export default layoutDashboard;
