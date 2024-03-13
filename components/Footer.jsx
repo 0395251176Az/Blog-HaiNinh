@@ -12,7 +12,7 @@ const Footer = () => {
           />
           {/* copyright */}
           <div className="text-muted-foreground">
-            Copyright &copy; HoangVuong. All rights reserved.
+            Copyright &copy;Trung vs Vuong. All rights reserved.
           </div>
         </div>
       </div>

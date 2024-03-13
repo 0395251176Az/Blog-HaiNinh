@@ -29,17 +29,17 @@ const Contact = () => {
             {/* mail */}
             <div className='flex items-center gap-x-8'>
               <MailIcon size={18} className='text-primary' />
-              <div>youremail@gmail.com</div>
+              <div>nguyen.haininh@ftu.edu.vn</div>
             </div>
             {/* address */}
             <div className='flex items-center gap-x-8'>
               <HomeIcon size={18} className='text-primary' />
-              <div>8420 Pine Avenue, Meadowville MC 842</div>
+              <div>Hà Nội</div>
             </div>
             {/* phone */}
             <div className='flex items-center gap-x-8'>
               <PhoneCall size={18} className='text-primary' />
-              <div>+44 123 546 7890</div>
+              <div>0915139839</div>
             </div>
           </div>
           <Form />
