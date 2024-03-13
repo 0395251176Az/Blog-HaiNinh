@@ -25,42 +25,42 @@ const reviewsData = [
     name: 'Richard Thompson',
     job: 'Chef',
     review:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quos quo voluptas tempora delectus dicta.',
+      'Sự thân thiện và tận tâm của Giảng viên Nguyễn Hải Ninh đã tạo ra một môi trường học tích cực, trải nghiệm học thoải mái.',
   },
   {
     avatar: '/reviews/avatar-2.png',
     name: 'Evelyn Anderson',
     job: 'Interior Designer',
     review:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quos quo voluptas tempora delectus dicta.',
+      'Giảng viên Nguyễn Hải Ninh không chỉ giảng dạy lý thuyết, mà còn chia sẻ nhiều kinh nghiệm thực tế từ sự nghiệp cá nhân.',
   },
   {
     avatar: '/reviews/avatar-3.png',
     name: 'John Doe',
     job: 'Game Dev',
     review:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quos quo voluptas tempora delectus dicta.',
+      'Giảng viên Nguyễn Hải Ninh không chỉ là người hướng dẫn chuyên nghiệp mà còn là người đồng hành trong sự phát triển cá nhân.',
   },
   {
     avatar: '/reviews/avatar-4.png',
     name: 'Emily Smith',
     job: 'Therapist',
     review:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quos quo voluptas tempora delectus dicta.',
+      'Ông luôn khuyến khích sinh viên tham gia các hoạt động ngoại khóa, dự án nghiên cứu, tạo điều kiện cho sự sáng tạo và phát triển kỹ năng mềm.',
   },
   {
     avatar: '/reviews/avatar-5.png',
     name: 'Oliver Taylor',
     job: 'Engineer',
     review:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quos quo voluptas tempora delectus dicta.',
+      'Học tại khoa Kinh tế với Giảng viên Ph.D Nguyễn Hải Ninh đã là một hành trình kiến thức tuyệt vời.',
   },
   {
     avatar: '/reviews/avatar-6.png',
     name: 'Mason Wilson',
     job: 'Video Editor',
     review:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quos quo voluptas tempora delectus dicta.',
+      'Giảng viên Ph.D Nguyễn Hải Ninh nổi bật với sự linh hoạt trong phương pháp giảng dạy với phương tiện truyền đạt và tích hợp công nghệ, tạo nên trải nghiệm học tập đa dạng.',
   },
 ];
 
