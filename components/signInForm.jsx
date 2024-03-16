@@ -1,9 +1,6 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-
-import { signUp } from "@/app/actions/users/signUp/route";
-
 import { signIn, useSession } from "next-auth/react";
 
 import { useRouter } from "next/navigation";
@@ -53,9 +50,9 @@ const SignInForm = () => {
 
   return (
     <main className="flex items-center justify-center md:h-screen ">
-      <div className="relative mx-auto flex w-full max-w-[400px] flex-col space-y-2.5 p-4 md:-mt-32 rounded-2xl bg-border">
-        <div className="flex h-20 w-full items-end rounded-lg bg-border  p-3 md:h-36">
-          <div className="w-32 text-white md:w-36 flex items-center gap-5">
+      <div className=" mx-auto flex w-full max-w-[400px] flex-col space-y-2.5 p-4 md:-mt-32 rounded-2xl">
+        <div className="flex h-20 w-full justify-center items-center rounded-lgp-3 md:h-36">
+          <div className="w-32 text-border md:w-36 flex items-center gap-5">
             <Image
               src="/logo.png"
               width={60}

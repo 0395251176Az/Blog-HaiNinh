@@ -1,11 +1,13 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Tabs, TabsList, TabsContent, TabsTrigger } from "@/components/ui/tabs";
 import ProjectCard from "@/components/ProjectCard";
 import Link from "next/link";
+import { getManyproject } from "../actions/project/route";
 
 const projectData = [
   {
+    id: 1,
     image: "/work/3.png",
     category: "Economy",
     name: "Market story",
@@ -15,6 +17,7 @@ const projectData = [
     github: "/",
   },
   {
+    id: 2,
     image: "/work/4.png",
     category: "Economy",
     name: "Market story",
@@ -24,6 +27,7 @@ const projectData = [
     github: "/",
   },
   {
+    id: 3,
     image: "/work/2.png",
     category: "Ecommerce",
     name: "Market story",
@@ -33,6 +37,7 @@ const projectData = [
     github: "/",
   },
   {
+    id: 4,
     image: "/work/1.png",
     category: "Ecommerce",
     name: "Market story",
@@ -42,6 +47,7 @@ const projectData = [
     github: "/",
   },
   {
+    id: 5,
     image: "/work/3.png",
     category: "Ecommerce",
     name: "Market story",
@@ -51,6 +57,7 @@ const projectData = [
     github: "/",
   },
   {
+    id: 6,
     image: "/work/4.png",
     category: "Ecommerce",
     name: "Market story",
@@ -60,6 +67,7 @@ const projectData = [
     github: "/",
   },
   {
+    id: 7,
     image: "/work/1.png",
     category: "Marketing",
     name: "Market story",
@@ -69,6 +77,7 @@ const projectData = [
     github: "/",
   },
   {
+    id: 8,
     image: "/work/3.png",
     category: "Marketing",
     name: "Market story",
@@ -78,6 +87,7 @@ const projectData = [
     github: "/",
   },
   {
+    id: 9,
     image: "/work/2.png",
     category: "Marketing",
     name: "Market story",
@@ -95,11 +105,25 @@ const uniqueCategories = [
 ];
 
 const Projects = () => {
+  const [data, setData] = useState([]);
   const [categories, setCategories] = useState(uniqueCategories);
   const [category, setCategory] = useState("all projects");
 
-  const filteredProjects = projectData.filter((project) => {
-    // if category is 'all projects' return all projects, else filter by category
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const project = await getManyproject();
+        setData(project);
+        // console.log(project);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    fetchData();
+  }, []);
+
+  const filteredProjects = data.filter((project) => {
+    // console.log(project);
     return category === "all projects"
       ? project
       : project.category === category;
@@ -111,15 +135,14 @@ const Projects = () => {
         <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">
           Tài liệu
         </h2>
-        {/* tabs */}
         <Tabs defaultValue={category} className="mb-24 xl:mb-48">
           <TabsList className="w-full grid h-full md:grid-cols-4 lg:max-w-[640px] mb-12 mx-auto md:border dark:border-none">
-            {categories.map((category, index) => {
+            {categories.map((category, id) => {
               return (
                 <TabsTrigger
                   onClick={() => setCategory(category)}
                   value={category}
-                  key={index}
+                  key={id}
                   className="capitalize w-[162px] md:w-auto"
                 >
                   {category}
@@ -127,15 +150,14 @@ const Projects = () => {
               );
             })}
           </TabsList>
-          {/* tabs content */}
           <div className="text-lg xl:mt-8 grid grid-cols-1 lg:grid-cols-3 gap-4">
-            {filteredProjects.map((project, index) => {
+            {filteredProjects.map((project, id) => {
               return (
-                <TabsContent value={category} key={index}>
-                  <Link href={"/"}>
+                <Link href={`/projects/${project.id}`} key={id}>
+                  <TabsContent value={category}>
                     <ProjectCard project={project} />
-                  </Link>
-                </TabsContent>
+                  </TabsContent>
+                </Link>
               );
             })}
           </div>

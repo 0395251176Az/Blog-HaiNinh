@@ -22,9 +22,6 @@ const Header = () => {
 
     return () => window.removeEventListener("scroll", scrollYPos);
   });
-  // if (status === "authenticated") {
-  //   return <p>Signed in as {session.user.email}</p>;
-  // }
   return (
     <header
       className={`${
